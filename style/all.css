@@ -1,1 +1,50 @@
 @charset "UTF-8";
+
+
+/* reset-------------------------------------- */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eadcda;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+/* layout-------------------------------------- */
+
+.wrapper{
+    width: 1200px;
+    margin: 1rem auto;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+
+.wrapper-item{
+    margin: 2rem 3rem;
+}
+
+/* header---------------------------------- */
+.header{
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-foot{
+    display: none;
+}
+
+/* nav-------------------------------------- */
+
+.nav-ul{
+    display: flex;
+}
+
+
+
+
+
+.nav-child-ul{
+    display: none;
+}
