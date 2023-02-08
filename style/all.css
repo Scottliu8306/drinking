@@ -1,20 +1,21 @@
 @charset "UTF-8";
 
 
-/* reset-------------------------------------- */
+/* reset----------------------------------------------------------------------- */
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eadcda;
 }
 
+/* 針對所有圖片 */
 img{
     vertical-align: bottom;
 }
 
-/* layout-------------------------------------- */
+/* layout------------------------------------------------------------------ */
 
 .wrapper{
-    width: 1200px;
+    max-width: 1200px;
     margin: 1rem auto;
     background-color: #fff;
     overflow: hidden;
@@ -25,7 +26,7 @@ img{
     margin: 2rem 3rem;
 }
 
-/* header---------------------------------- */
+/* header---------------------------------------------------------------- */
 .header{
     display: flex;
     align-items: flex-end;
@@ -35,7 +36,16 @@ img{
     display: none;
 }
 
-/* nav-------------------------------------- */
+.header-head{
+    width: 15%;
+}
+
+.header-img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* nav------------------------------------------------------------ */
 
 .nav-ul{
     display: flex;
@@ -44,7 +54,125 @@ img{
 
 
 
+.nav-link{
+    text-decoration: none;
+    display: block;
+    padding:  .7rem 1rem;
+}
+
+.nav-link:hover{
+    background-color: #cd8c96;
+}
+
+.nav-link:hover .nav-cht,
+.nav-link:hover .nav-en{
+    color: #FFF;
+}
+
+.nav-li{
+    position: relative;
+}
+.nav-li + li{
+    margin-left: 1rem;
+}
+
+.nav-li:hover .nav-child-ul{
+    display: block;
+}
+
+.nav-cht,
+.nav-en{
+    display: block;
+}
+
+.nav-cht{
+    color: #cd8c96;
+}
+
+.nav-en{
+    margin-top: .3rem;
+    text-transform: capitalize;
+    color: #999;
+    font-size: .9rem;
+}
 
 .nav-child-ul{
     display: none;
+    border: solid 1px #bc9381;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.nav-child-li .nav-cht,
+.nav-child-li .nav-en{
+    display: inline;
+}
+
+.nav-child-li .nav-link{
+    white-space: nowrap;
+}
+
+
+
+/* col多欄式萬用格線系統---------------------------------------------- */
+
+.col{
+    display: flex;
+}
+
+.col-row{
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.col-item{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: pink;
+}
+
+.col-item-1{
+    width: 8.3333333333333334%;
+}
+
+.col-item-2{
+    width: 16.6666666666666666666668%;
+}
+
+.col-item-3{
+    width: 25%;
+}
+
+.col-item-4{
+    width: 33.3333333333333333333333333333336%;
+}
+
+.col-item-5{
+    width: 41.666666666666666666666666666667%;
+}
+.col-item-6{
+    width: 50%;
+}
+.col-item-7{
+    width: 58.3333333333333336%;
+}
+.col-item-8{
+    width: 66.666666666666666666666667%;
+}
+.col-item-9{
+    width: 75%;
+}
+
+.col-item-10{
+    width: 83.3333333333333333333334%;
+}
+
+.col-item-11{
+    width: 91.66666666666666666666667%;
+}
+
+.col-item-12{
+    width: 100%;
 }

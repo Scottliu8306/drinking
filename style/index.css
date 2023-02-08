@@ -1,1 +1,130 @@
 @charset "UTF-8";
+/* banner head----------------------------- */
+.banner{
+    position: relative;
+}
+
+.banner-ul{
+    display: flex;
+    width: 400%;
+    position: relative;
+    left: 0;
+    transition-duration: .3s;
+}
+
+.banner-head{
+    overflow: hidden;
+}
+
+.banner-img{
+    max-width:100% ;
+    height: auto;
+}
+
+/* banner-body------------------ */
+.banner-body{
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: center;
+
+}
+
+.banner-btn{
+    
+    text-indent: -9999px;
+    width: .7rem;
+    height: .7rem;
+    padding: 0;
+    background-color: #fff;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner-btn:hover{
+    background-color: orange;
+}
+
+.banner-btn-active{
+    background-color: orange;
+}
+
+/* category----------------------------------- */
+
+/* .category{
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.category-item{
+    background-color: pink;
+    margin-left: 1rem;
+    margin-right: 1rem;
+} */
+
+.col{
+    display: flex;
+}
+
+.col-row{
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.col-item{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: pink;
+}
+
+
+/* col多欄式萬用格線系統----------------------------- */
+.col-item-1{
+    width: 8.3333333333333334%;
+}
+
+.col-item-2{
+    width: 16.6666666666666666666668%;
+}
+
+.col-item-3{
+    width: 25%;
+}
+
+.col-item-4{
+    width: 33.3333333333333333333333333333336%;
+}
+
+.col-item-5{
+    width: 41.666666666666666666666666666667%;
+}
+.col-item-6{
+    width: 50%;
+}
+.col-item-7{
+    width: 58.3333333333333336%;
+}
+.col-item-8{
+    width: 66.666666666666666666666667%;
+}
+.col-item-9{
+    width: 75%;
+}
+
+.col-item-10{
+    width: 83.3333333333333333333334%;
+}
+
+.col-item-11{
+    width: 91.66666666666666666666667%;
+}
+
+.col-item-12{
+    width: 100%;
+}

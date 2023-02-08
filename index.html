@@ -17,14 +17,17 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/all.css">
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header  wrapper-item">
+        <header class=" wrapper-item">
+            <!-- 首頁 導覽 -->
             <div class="header">
                 <div class="header-head">
                     <!-- logo -->
@@ -95,7 +98,7 @@
                                             <span class="nav-cht">伴手禮</span>
                                             <span class="nav-en">gift</span>
                                         </a>
-                                    </li>                                   
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-li"><a class="nav-link" href="./stores.html">
@@ -112,8 +115,87 @@
             </div>
 
         </header>
-        <section class="wrapper-item">wrapper-item</section>
-        <section class="wrapper-item">wrapper-item</section>
+        <!-- banner橫幅 -->
+        <section class="wrapper-item">
+            <div class="banner">
+                <div class="banner-head">
+                    <ul class="banner-ul">
+                        <!-- 第一組 -->
+                        <li class="banner-li"><a href="./products-list.html">
+                                <picture>
+                                    <source srcset="./images/banner1-desktop.jpg" media="(min-width: 481px)">
+                                    <source srcset="./images/banner1-mobile.jpg" media="(max-width: 480px)">
+                                    <img class="banner-img" src="./images/banner1-desktop.jpg" width="1104" height="436"
+                                        alt="咖啡 coffee">
+                                </picture>
+                            </a></li>
+                        <!-- 第二組 -->
+                        <li class="banner-li"><a href="./products-list.html">
+                                <picture>
+                                    <source srcset="./images/banner2-desktop.jpg" media="(min-width: 481px)">
+                                    <source srcset="./images/banner2-mobile.jpg" media="(max-width: 480px)">
+                                    <img class="banner-img" src="./images/banner2-desktop.jpg" width="1104" height="436"
+                                        alt="蛋糕 cake">
+                                </picture>
+                            </a></li>
+                        <!-- 第三組 -->
+                        <li class="banner-li"><a href="./products-list.html">
+                                <picture>
+                                    <source srcset="./images/banner3-desktop.jpg" media="(min-width: 481px)">
+                                    <source srcset="./images/banner3-mobile.jpg" media="(max-width: 480px)">
+                                    <img class="banner-img" src="./images/banner3-desktop.jpg" width="1104" height="436"
+                                        alt="烘焙 bake">
+                                </picture>
+                            </a></li>
+                        <!-- 第四組 -->
+                        <li class="banner-li"><a href="./products-list.html">
+                                <picture>
+                                    <source srcset="./images/banner4-desktop.jpg" media="(min-width: 481px)">
+                                    <source srcset="./images/banner4-mobile.jpg" media="(max-width: 480px)">
+                                    <img class="banner-img" src="./images/banner4-desktop.jpg" width="1104" height="436"
+                                        alt="伴手禮 gift">
+                                </picture>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="banner-body">
+                    <input class="banner-btn" type="button" value="0">
+                    <input class="banner-btn" type="button" value="1">
+                    <input class="banner-btn" type="button" value="2">
+                    <input class="banner-btn" type="button" value="3">
+                </div>
+            </div>
+        </section>
+        <!-- column分類商品 -->
+        <section class="wrapper-item">
+            <div class="col col-row ">
+                <!-- 第一組咖啡 -->
+                <div class="col-item col-item-3 ">
+                    <div class="category">
+                        <div class="category-head">
+                            <h3 class="category-title">
+                                <span class="category-cht">咖啡</span>
+                                <small class="category-en">coffee</small>
+                            </h3>
+                            <div class="category-btns">
+                                <a href="./products-list.html" class="category-btn">更多商品</a>
+                            </div>
+                        </div>
+                        <div class="category-body">
+                            <div class="category-imgs">
+                                <img class="category-img" src="./images/category-coffee.png" alt="咖啡 coffee">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二組蛋糕 -->
+                <div class="col-item col-item-3 ">11</div>
+                <!-- 第三組烘焙 -->
+                <div class="col-item col-item-3 ">11</div>
+                <!-- 第四組伴手禮 -->
+                <div class="col-item col-item-3">11</div>
+            </div>
+        </section>
         <section class="wrapper-item">wrapper-item</section>
         <section class="wrapper-item wrapper-item-other ">wrapper-item</section>
     </div>
