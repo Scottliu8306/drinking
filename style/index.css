@@ -1,10 +1,11 @@
 @charset "UTF-8";
+
 /* banner head----------------------------- */
-.banner{
+.banner {
     position: relative;
 }
 
-.banner-ul{
+.banner-ul {
     display: flex;
     width: 400%;
     position: relative;
@@ -12,17 +13,17 @@
     transition-duration: .3s;
 }
 
-.banner-head{
+.banner-head {
     overflow: hidden;
 }
 
-.banner-img{
-    max-width:100% ;
+.banner-img {
+    max-width: 100%;
     height: auto;
 }
 
 /* banner-body------------------ */
-.banner-body{
+.banner-body {
     position: absolute;
     left: 0;
     bottom: 1rem;
@@ -32,8 +33,8 @@
 
 }
 
-.banner-btn{
-    
+.banner-btn {
+
     text-indent: -9999px;
     width: .7rem;
     height: .7rem;
@@ -46,85 +47,99 @@
     cursor: pointer;
 }
 
-.banner-btn:hover{
+.banner-btn:hover {
     background-color: orange;
 }
 
-.banner-btn-active{
+.banner-btn-active {
     background-color: orange;
 }
 
-/* category----------------------------------- */
+/* Category---------------------------------------- */
 
-/* .category{
-    display: flex;
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
-
-.category-item{
-    background-color: pink;
-    margin-left: 1rem;
-    margin-right: 1rem;
-} */
-
-.col{
-    display: flex;
+.category {
+    background-image: linear-gradient(#fff, #d4b9b5);
+    position: relative;
+    border: solid 1px #f2e4e2;
 }
 
-.col-row{
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
-
-.col-item{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: pink;
-}
-
-
-/* col多欄式萬用格線系統----------------------------- */
-.col-item-1{
-    width: 8.3333333333333334%;
-}
-
-.col-item-2{
-    width: 16.6666666666666666666668%;
-}
-
-.col-item-3{
-    width: 25%;
-}
-
-.col-item-4{
-    width: 33.3333333333333333333333333333336%;
-}
-
-.col-item-5{
-    width: 41.666666666666666666666666666667%;
-}
-.col-item-6{
-    width: 50%;
-}
-.col-item-7{
-    width: 58.3333333333333336%;
-}
-.col-item-8{
-    width: 66.666666666666666666666667%;
-}
-.col-item-9{
-    width: 75%;
-}
-
-.col-item-10{
-    width: 83.3333333333333333333334%;
-}
-
-.col-item-11{
-    width: 91.66666666666666666666667%;
-}
-
-.col-item-12{
+.category-body {
     width: 100%;
+    /* background-color: pink;
+    text-align: right; */
+}
+
+.category-imgs {
+    text-align: right;
+}
+
+.category-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category-head {
+    position: absolute;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.category-cht {
+    color: #bf7629;
+    font-size: 1.5rem;
+}
+
+.category-en {
+    margin-top: 5px;
+    color: #bf938d;
+    display: block;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.category-btn {
+    display: inline-block;
+    background-color: #FF8F00;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 3px;
+}
+
+.category-btn:hover {
+    opacity: .7;
+}
+
+/* News--------------------------------------------------------------- */
+
+.news-ul {
+    list-style-type: square;
+    color: #ccc;
+    padding-left: 1.1rem;
+}
+
+.news-li {
+    line-height: 1.5;
+}
+
+.news-li + li{
+    margin-top: 1rem;
+}
+.news-link{
+    color: #cd8c96;
+    text-decoration: none;
+}
+
+.news-link:hover{
+    text-decoration: underline;
+}
+
+/* Hot!--------------------------- */
+
+.hot-body{
+    margin-top: 1rem;
 }

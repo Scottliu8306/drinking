@@ -120,6 +120,9 @@ img{
 
 .col{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+
 }
 
 .col-row{
@@ -128,9 +131,13 @@ img{
 }
 
 .col-item{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: pink;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    /* background-color: pink; */
+    padding-left: 1rem ;
+    padding-right: 1rem;
+    box-sizing: border-box;
+
 }
 
 .col-item-1{
@@ -175,4 +182,132 @@ img{
 
 .col-item-12{
     width: 100%;
+}
+
+
+/* Menu---------------------------- */
+.menu-body{
+    margin-top: 1rem;
+}
+
+/* Group----------------------------- */
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 1rem;
+    border-bottom:solid 5px #f2e4e2 ;
+}
+
+.group-title{
+    color: #bc938d;
+    font-size: 1.125rem;
+}
+
+.group-small{
+    margin-left: .5rem;
+    color: #999;
+    text-transform: capitalize;
+    font-size:  .9rem;
+}
+
+.group-solid-sm{
+    border-bottom:solid 1px #f2e4e2 ;
+}
+
+.group-link{
+    text-decoration: none;
+    color: #000;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+.group-link:hover{
+    text-decoration: underline;
+}
+
+/* Card------------------------------ */
+
+.card{
+    display: flex;
+}
+
+
+.card-head{
+    line-height: 1.5;
+}
+
+.card-body{
+    order: -1;
+}
+.card-foot{}
+
+.card-link{
+    text-decoration: none;
+    color: #FF8F00;
+}
+
+.card-link:hover{
+    text-decoration: underline;
+}
+
+.card-desc{
+    color: #999;
+    text-transform: capitalize;
+}
+
+.card-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card-btn {
+    display: inline-block;
+    background-color: #FF8F00;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 3px;
+}
+
+.card-btn:hover{
+    opacity: .7;
+}
+
+
+/* Card垂直模組 */
+.card-stack{
+    flex-direction: column;
+}
+
+.card-stack .card-body{
+    margin-bottom: 1rem;
+}
+
+.card-stack .card-foot{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Contact---------------------------------  */
+
+.contact-body{
+    margin-top: 1rem;
+}
+
+.contact-social{
+    text-align: center;
+}
+
+.contact-icon{
+    text-decoration: none;
+    font-size: 3rem;
+    color: #eddedc;
+}
+
+.contact-icon:hover{
+    opacity: .7;
 }
