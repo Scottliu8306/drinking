@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/*subnav -------------------------- */
+
+
+.subnav-li+.subnav-li {
+    padding-top: .7rem;
+    margin-top: .7rem;
+    border-top: solid 1px #f2e4e2;
+}
+
+.subnav-cht {
+    color: #cd8c96;
+}
+
+.subnav-en {
+    color: #999;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+.subnav-link {
+    text-decoration: none;
+    padding: .7rem;
+    display: block;
+}
+
+.subnav-link:hover {
+    background-color: #cd8c96;
+}
+
+.subnav-link:hover .subnav-cht,
+.subnav-link:hover .subnav-en {
+    color: #fff;
+}
+
+/* Feature-------------------------------- */
+.feature {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10%;
+}
+
+.feature-head {
+    background-color: #fff;
+    width: 50%;
+    margin-bottom: -5%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+
+}
+
+.feature-body {
+    width: 60%;
+    margin-left: -5%;
+}
+
+.feature-img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.feature-title {
+    font-size: 1.2rem;
+}
+
+.feature-desc {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.feature-link {
+    display: inline-block;
+    color: #cd8c96;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+.feature-link:hover {
+    text-decoration: none;
+}
+
+.feature-reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-reverse .feature-head {
+    margin-left: -5%;
+}
+
+.feature-reverse .feature-body {
+    margin-left: 0;
+}
+
+
+/* Article----------------------- */
+
+.article-title-lg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.article-quote {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.article .fa-quote-left,
+.article .fa-quote-right{
+    color: #EEE;
+    font-size: 3rem;
+}
+
+.article .fa-quote-left{
+    position: absolute;
+    left: 15%;
+    top: -1rem;
+}
+.article .fa-quote-right{
+    position: absolute;
+    right: 15%;
+    bottom: -1rem;
+}

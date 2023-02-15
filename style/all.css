@@ -114,6 +114,15 @@ img{
     white-space: nowrap;
 }
 
+.nav-li-active > .nav-link{
+    background-color: #cd8c96;
+}
+
+.nav-li-active > .nav-link > .nav-cht,
+.nav-li-active > .nav-link > .nav-en{
+    color: #fff;
+}
+
 
 
 /* col多欄式萬用格線系統---------------------------------------------- */
@@ -310,4 +319,108 @@ img{
 
 .contact-icon:hover{
     opacity: .7;
+}
+
+.contact-li{
+    display: flex;
+}
+
+.contact-li + .contact-li{
+    margin-top: 1rem;
+}
+
+.contact-link{
+    color: #bc938d;
+}
+
+.contact-link:hover{
+    text-decoration: underline ;
+}
+
+.contact-link,
+.contact-icon{
+    text-decoration: none;
+}
+
+.contact-child-ul{
+    border-left: solid 1px #CCC;
+    padding-left: .5rem;
+    margin-left: .5rem;
+}
+
+.contact-child-li{
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.contact-service{
+    text-align: center;
+}
+
+.contact-tel{
+    font-size: 2.5rem;
+    color: #eddedc;
+}
+
+
+/* Footer--------------------- */
+.footer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #bc938d;
+    text-align: center;
+}
+
+
+/* Breadcrumb-------------------------- */
+
+.breadcrumb{
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item{
+    font-size: .9rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    content: "/";
+    margin-right: .4rem;
+    color: #CCC;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.breadcrumb-link{
+    text-decoration: none;
+    color: #cd8c96;
+}
+
+.breadcrumb-link:hover{
+    text-decoration: underline;
+}
+
+
+/* content----------------------------------- */
+
+.content{
+    margin-bottom: 2rem;
+}
+
+
+.content-head{
+    margin-bottom: 2rem;
+}
+.headline{
+    background-color: #bc938d;
+    padding: .7rem 1rem;
+}
+
+.headline-cht{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.headline-en{
+    color: rgba(255, 255, 255, .5);
+    text-transform: capitalize;
 }
