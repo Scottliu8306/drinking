@@ -44,11 +44,11 @@
 .feature-head {
     background-color: #fff;
     width: 50%;
-    margin-bottom: -5%;
+    margin-bottom: -8%;
     padding: 1.5rem 2rem;
     box-sizing: border-box;
     position: relative;
-    z-index: 100;
+    z-index: 10;
 
 }
 
@@ -100,11 +100,35 @@
 
 /* Article----------------------- */
 
-.article-title-lg {
+.article-title-lg,
+.article-title-sm,
+.article-quote{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
+.article-title-lg{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline wavy #CD8C96;
+
+}
+
+.article-title-sm{
+    font-size: 1.1rem;
+    list-style-type: square;
+    display: list-item;
+    margin-left: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.article-desc{
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    line-height: 1.5;
+}
 .article-quote {
     font-size: 1.5rem;
     text-align: center;
@@ -114,17 +138,17 @@
 
 .article .fa-quote-left,
 .article .fa-quote-right{
-    color: #EEE;
+    color: #bc938d80;
     font-size: 3rem;
 }
 
 .article .fa-quote-left{
     position: absolute;
-    left: 15%;
+    left: 8%;
     top: -1rem;
 }
 .article .fa-quote-right{
     position: absolute;
-    right: 15%;
-    bottom: -1rem;
+    right: 8%;
+    top: -1rem;
 }

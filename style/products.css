@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Box---------------------- */
+
+.box{
+    position: relative;
+}
+
+.box-head{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0 , .5 );
+
+}
+.box-title{}
+
+.box-body{}
+
+.box-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.box-hover:hover .box-head{
+    display: none;
+}
