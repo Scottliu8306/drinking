@@ -302,6 +302,54 @@ img{
     align-items: center;
 }
 
+
+/* Card水平模組 */
+
+.card-matrix .card-head,
+.card-matrix .card-body,
+.card-matrix .card-foot{
+    padding: 1rem;
+}
+
+/* .card-matrix .card-head{
+    width: 30%;
+} */
+
+.card-matrix .card-head{
+    width: 60%;
+}
+
+.card-matrix .card-body{
+    width: 20%;
+}
+
+.card-matrix .card-foot{
+    width: 20%;
+}
+
+.card-matrix .card-title{
+    font-size: 1.4rem;
+}
+
+.card-matrix .card-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Card邊框模組 */
+.card-border{
+    border: solid 1px #f2e4e2;
+}
+
+.card-border:hover{
+    border-color: #ded1cf;
+}
+
+
+
 /*Contact---------------------------------  */
 
 .contact-body{
@@ -424,4 +472,55 @@ img{
 .headline-en{
     color: rgba(255, 255, 255, .5);
     text-transform: capitalize;
+}
+
+/*subnav -------------------------- */
+
+
+.subnav-li + .subnav-li {
+    padding-top: .7rem;
+    margin-top: .7rem;
+    border-top: solid 1px #f2e4e2;
+}
+
+
+.subnav-child-ul{
+    margin-left: .8rem;
+}
+
+.subnav-cht {
+    color: #cd8c96;
+}
+
+.subnav-en {
+    color: #999;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+.subnav-link {
+    text-decoration: none;
+    padding: .7rem;
+    display: block;
+}
+
+.subnav-link:hover {
+    background-color: #cd8c96;
+}
+
+.subnav-link:hover .subnav-cht,
+.subnav-link:hover .subnav-en {
+    color: #fff;
+}
+
+.subnav-li-active > .subnav-link,
+.subnav-child-li-active > .subnav-link{
+    background-color: #cd8c96;
+}
+
+.subnav-li-active > .subnav-link > .subnav-cht,
+.subnav-li-active > .subnav-link > .subnav-en,
+.subnav-child-li-active > .subnav-link > .subnav-cht,
+.subnav-child-li-active > .subnav-link > .subnav-en{
+    color: #fff;
 }
