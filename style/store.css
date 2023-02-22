@@ -1,2 +1,37 @@
 @charset "UTF-8";
 
+/* Stores--------------------------------- */
+
+.store-map{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / .75 ;
+    vertical-align: bottom;
+}
+
+.store{
+    overflow: hidden;
+    border: solid 1px #f2e4e2;
+}
+
+.store-head,
+.store-body{
+    margin: 1rem;
+}
+
+.store-title{
+    font-size: 1.2rem;
+}
+
+.store-ul{
+    margin-top: 1rem;
+}
+
+.store-li .fas{
+    color: #eddedc;
+    margin-right: .5rem;
+}
+
+.store-li{
+    line-height: 1.7;
+}

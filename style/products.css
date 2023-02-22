@@ -29,3 +29,140 @@
 .box-hover:hover .box-head{
     display: none;
 }
+
+
+/* Content-------------------------- */
+
+/* .content-item + .content-item{
+    margin-top: 2rem;
+} */
+
+.content-item:last-child{
+    margin-top: 2rem;
+}
+
+/* Commodity---------------------------------- */
+.commodity{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.commodity-head,
+.commodity-body{
+    width: 50%;
+}
+.commodity-head{
+    margin-left: 2rem;
+}
+.commodity-body{}
+.commodity-title{
+    /* display: flex; */
+    align-items: baseline;
+}
+.commodity-cht{
+    color: #bc938d;
+    font-size: 1.4rem;
+}
+.commodity-en{
+    color: #999;
+    margin: left 0.5rem; 
+    text-transform: capitalize;
+}
+
+.commodity-li{
+    border-top: solid 1px #f2e4e2;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.commodity-desc{
+    line-height: 1.5;
+}
+
+.commodity-desc + .commodity-desc{
+    margin-top: 1rem;
+}
+
+.commodity-sale, .commodity-cost{
+    display: inline;
+}
+
+.commodity-sale{
+    padding: .3rem 1rem;
+    background-color: #cd8c96;
+    color: #fff;
+}
+
+.commodity-cost{
+    margin-left: .5rem;
+    color: #999;
+    /* 刪除線效果 */
+    /* text-decoration: line-through; */
+}
+
+.commodity-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.commodity-thumbnail{
+    display: flex;
+    margin-top: 1rem;
+    /* 切齊(把加的空間扣回來) */
+    margin-right: -.5rem;
+    margin-left: -.5rem;
+}
+
+.commodity-thumbnail .commodity-img{
+    width: 25%;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    box-sizing: border-box;
+}
+
+.commodity-thumbnail .commodity-img:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+/* Tab----------------------------------------- */
+
+.tab-ul{
+    display: flex;
+}
+.tab-li{
+    margin-right: -1px;
+    padding: .7rem 1rem ;
+    border:  solid 1px transparent;
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+
+.tab-li-active{
+    position: relative;
+    z-index: 2;
+    color: #bc938d;
+    background-color: #fff;
+    border: solid 1px #f2e4e2;
+    border-bottom: none;
+}
+
+.tab-container{
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+    border:  solid 1px #f2e4e2;
+    padding: .7rem 1rem;
+}
+.tab-content{
+    display: none;
+}
+
+.tab-content:first-child{
+    display: block;
+}
+
+.tab-content p + p{
+    margin-top: 1rem;
+}
+
