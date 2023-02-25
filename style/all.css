@@ -524,3 +524,132 @@ img{
 .subnav-child-li-active > .subnav-link > .subnav-en{
     color: #fff;
 }
+
+
+/* RWD------------------------------------------- */
+
+@media screen and (max-width: 480PX) {
+    .wrapper{
+        margin: 4.3rem 1rem 1rem;
+    }
+    .wrapper-item{
+        margin: 1rem;
+    }
+    .wrapper-item-other .col-item-4{
+        width: 100%;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        background-color: #FFF;
+        /* 對齊 */
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px  5px rgba(0, 0, 0, .1);
+
+    }
+
+    .header-head{
+        padding: 5px 1rem;
+        width: 20%;
+    }
+    .header-body{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 52px);
+        background-color: rgba(255, 255, 255, .95);
+        box-shadow:0 5px 5px -3px rgba(0, 0, 0, .1) inset;
+    }
+    .header-foot{
+        display: block;
+        padding: .5rem 1rem;
+    }
+
+    .header-btn{
+        padding: .5rem .7rem;
+        font-size: 1rem;
+        border: solid 1px #cd8c96;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #cd8c96;
+    }
+
+    .nav-ul{
+        flex-direction: column;
+    }
+
+    .nav-li + .nav-li{
+        margin-left: 0;
+    }
+
+    .nav-cht, .nav-en{
+        display: inline-block;
+    }
+
+    .nav-child-ul{
+        display: block;
+        position: static;
+        border: 0;
+        background-color: transparent;
+    }
+
+    .nav-child-ul .nav-link{
+        padding-left: 2rem;
+    }
+
+    /* col------------------- */
+
+    .col{
+        row-gap: 1rem;
+
+    }
+
+    .col-row{
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    .col-item{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .col-item-3,
+    .col-item-4{
+        width: 50%;
+    }
+
+    .col-item-3.col-item-full,
+    .col-item-6.col-item-full,
+    .col-item-9.col-item-full{
+        width: 100%;
+    }
+
+    .col-item-3.col-item-none{
+        display: none;
+    }
+
+
+    /* footer-------------------------------- */
+    .contact .group{
+        justify-content: center;
+    }
+
+    .footer{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+
+
+
+}

@@ -163,3 +163,29 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+/* RWD--------------------------- */
+
+@media screen and (max-width : 480px){
+
+    .feature{
+        flex-direction: column;
+    }
+
+    .feature-head,
+    .feature-body{
+        width: 100%;
+    }
+
+    .feature-head{
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .feature-body{
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    
+}
