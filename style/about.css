@@ -20,6 +20,10 @@
 
 }
 
+.header-body{
+    z-index: 11;
+}
+
 .feature-body {
     width: 60%;
     margin-left: -5%;
@@ -187,5 +191,52 @@
         margin-left: 0;
     }
 
-    
+    .article-desc{
+        margin-left: 0;
+    }
+
+    .article-title-lg{
+        text-align: center;
+    }
+
+    .article .fa-quote-left,
+    .article .fa-quote-right{
+        font-size: 2rem;
+    }
+
+    .article .fa-quote-left{
+        left: 0;
+        top: -1rem;
+    }
+    .article .fa-quote-right{
+        right: 0;
+        top: -2rem;
+    }
+
+    .article-quote{
+        font-size: 1.1rem;
+    }
+
+    .detail-head{
+        line-height: 1.3;
+    }
+
+    .detail-date{
+        display: block;
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+
+    .detail-body{
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+
+    .detail + .detail{
+        padding-top: 1rem;
+    }
+
+
+
+
 }
