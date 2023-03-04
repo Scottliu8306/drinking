@@ -18,9 +18,34 @@ function setSlide(){
     }else{
         index = 0;
     }
-    console.log(index)
+    // console.log(index)
+    $bannerLs.css("left", -index*100+"%")
+    // $bannerLs.css("left", `-$( index * 100 ) % `)
+
+    $bannerBtns.eq(index).addClass("banner-btn-active").siblings().removeClass("banner-btn-active")
+
+
 };
 
+// Init-------------------------------------
+$bannerBtns.eq(index).addClass("banner-btn-active")
 bannerInterval = setInterval(setSlide,duration)
 
 $bannerLs.css("left", -index*100 + "%");
+
+
+// Event--------------------------------------
+
+$banner.hover(function(){
+    clearInterval(bannerInterval)
+},function(){
+    bannerInterval = setInterval(setSlide,duration)
+});
+
+$bannerBtns.click(function(){
+    index = $(this).index();
+    $bannerLs.css("left", -index * 100 + "%");
+    $(this)
+    .addClass("banner-btn-active")
+    .siblings().removeClass("banner-btn-active");
+});
